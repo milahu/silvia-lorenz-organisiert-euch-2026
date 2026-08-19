@@ -42,9 +42,7 @@ mkShell {
       pillow
       numpy
       opencv4
-      # python-fontconfig
-      # https://github.com/NixOS/nixpkgs/issues/525135
-      nur.repos.milahu.python3.pkgs.python-fontconfig
+      python-fontconfig
       reportlab
       ocrmypdf
       psutil
