@@ -158,7 +158,7 @@ lowthresh = 0.3
 
 # leveling is too destructive on images and colors
 # so we keep the darkgray text on lightgray background
-do_level = False
+# do_level = False
 
 
 

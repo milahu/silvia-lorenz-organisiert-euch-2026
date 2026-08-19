@@ -79,27 +79,31 @@ args += [
     "--text-format", "html",
     # TODO? move these config items to 000-config.py
     "--doc-modified", doc_modified,
-]
-
-
-todo_args = [
-    "--doc-title", "",
-    "--doc-subtitle", "",
+    "--doc-title", "Organisiert Euch!",
+    "--doc-subtitle", "Denkschrift für eine selbstbestimmte Ordnung",
     # "--doc-subject", "",
-    "--doc-date", "2025",
+    "--doc-date", "2026",
     "--doc-edition", "1",
-    "--doc-extent", "123 pages",
-    "--doc-author", "",
+    "--doc-extent", "132 pages",
+    "--color-image-pages", "133,134",
+    "--doc-author", "Silvia Lorenz",
     # "--doc-introducer", "",
     # "--doc-contributor", "",
     # "--doc-translator", "",
-    "--doc-publisher", "",
+    "--doc-publisher", "regenauer.press",
     "--doc-language", "de", # german
     # "--doc-language", "en", # english
-    "--doc-isbn", "0000000000000",
-    "--doc-cover-image", "070-deskew/999.tiff",
-    "--canonical-url-base", "https://milahu.github.io/todo/",
+    "--doc-isbn", "9783384829603",
+    "--doc-cover-image", "0663-level/133.tiff",
+    "--canonical-url-base", "https://milahu.github.io/silvia-lorenz-organisiert-euch-2026/",
     "--doc-description", """
+Das Buch setzt sich mit der Frage auseinander,
+wie Gesellschaften ohne zentrale Verwaltung - sprich, den Staat - organisiert werden können.
+
+Dabei geht es primär um Gegenentwürfe zur zunehmenden Machtkonzentration von Staat und Konzernoligarchien.
+Um Konzepte, die dem supranationalen Korporatismus
+mit dezentralen und eigenverantwortlichen Ansätzen begegnen wollen.
+Um Voluntarismus.
 """,
 ]
 
