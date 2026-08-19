@@ -7,6 +7,7 @@ import shutil
 import subprocess
 import sys
 import zipfile
+import shlex
 from datetime import datetime
 from pathlib import Path
 
@@ -106,7 +107,9 @@ todo_args = [
 print(">", shlex.join(args + sys.argv[1:]) + f" {src}/*.hocr")
 
 
-hocr_files = src.glob("*.hocr")
+hocr_files = list(src.glob("*.hocr"))
+
+hocr_files.sort()
 
 subprocess.run(
     args + sys.argv[1:] + hocr_files,

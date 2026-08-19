@@ -34,11 +34,12 @@ THRESH_MIN = 200
 # if we remove the dirty inside edge
 # then we remove a small rectangle from the inside edge
 # to get a straight inside edge (vertical)
-# remove_inside_transparent_strip = True
+remove_inside_transparent_strip = True
 #
+# FIXME this produces black triangles on the inside edges
 # if we keep the dirty inside edge
 # then there is a small transparent rectangle inside of the inside edge
-remove_inside_transparent_strip = False
+# remove_inside_transparent_strip = False
 
 
 
@@ -56,6 +57,7 @@ import os
 import re
 import math
 import random
+import shutil
 from concurrent.futures import ProcessPoolExecutor, as_completed
 
 import numpy as np
@@ -1815,6 +1817,26 @@ def main():
     if not files:
         print("nothing to do")
         return
+
+    dst = OUTPUT_DIR
+    content_files = []
+    extra_files = []
+    for f in files:
+        page_num = get_page_num(f)
+        if 1 <= page_num <= config.num_pages:
+            # process content pages
+            content_files.append(f)
+        else:
+            # copy extra pages: book cover, etc
+            extra_files.append(f)
+    # copy extra pages: book cover, etc
+    if extra_files:
+        print(f"copying {len(extra_files)} extra pages")
+        for f in extra_files:
+            f_dst = dst / f.name
+            shutil.copy(f, f_dst)
+    # process only content files
+    files = content_files
 
     num_workers = psutil.cpu_count(logical=False) or 1
 

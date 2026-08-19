@@ -3,6 +3,8 @@ import importlib.util
 import re
 from typing import Iterable
 from collections import defaultdict
+from types import SimpleNamespace
+import types
 
 config_path = Path("000-config.py")
 
@@ -13,6 +15,18 @@ def load_config(config_path=config_path):
 
     config = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(config)
+
+    # convert module to namespace
+    # to make it pickle-able for multiprocessing
+    # fix: TypeError: cannot pickle 'module' object
+    config = SimpleNamespace(
+        **{
+            name: value
+            for name, value in vars(config).items()
+            if not name.startswith("__")
+            and not isinstance(value, types.ModuleType)
+        }
+    )
 
     # allow appending some pages
     # without having to rename all files

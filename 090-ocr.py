@@ -17,8 +17,6 @@ from _shared import (
     remove_done_files,
 )
 
-config = load_config()
-
 
 # source directory
 # src = "0685-fill-white-pages"
@@ -51,7 +49,7 @@ def load_kv_file(path):
 # worker function
 # ----------------------------
 def run_tesseract(task):
-    inp, out_hocr = task
+    inp, out_hocr, config = task
 
     inp = Path(inp)
     out_hocr = Path(out_hocr)
@@ -102,10 +100,12 @@ def run_tesseract(task):
     return result
 
 
-def download_tessdata_best(langs, dst="tessdata_best"):
+def download_tessdata_best(langs, config):
     """
     Download Tesseract tessdata_best models with caching
     """
+
+    dst = config.tessdata_dir
 
     if not langs:
         raise ValueError("no arguments (example: tessdata_best('eng', 'deu', 'rus'))")
@@ -182,6 +182,9 @@ def main():
 
     global src
     global dst
+    # global config
+
+    config = load_config()
 
     script_dir = Path(__file__).resolve().parent
     # os.chdir(script_dir)
@@ -195,7 +198,7 @@ def main():
     print(f"ocr_cfg: {json.dumps(ocr_cfg, indent=2)}")
 
     # TODO? remove tessdata_dir in favor of tessdata_cache_dir
-    download_tessdata_best(config.ocr_lang.split("+"), config.tessdata_dir)
+    download_tessdata_best(config.ocr_lang.split("+"), config)
 
     config.tessdata_dir = os.path.abspath(config.tessdata_dir)
 
@@ -218,6 +221,7 @@ def main():
         (
             str(inp),
             dst / (inp.stem + ".hocr"),
+            config,
         )
         for inp in inputs
     ]
