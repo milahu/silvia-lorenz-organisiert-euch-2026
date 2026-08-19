@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Organisiert Euch!</title>
+<meta name="generator" content="hocr-to-epub-fxl"/>
+<link rel="canonical" href="https://milahu.github.io/silvia-lorenz-organisiert-euch-2026/index.xhtml"/>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  #menu-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    padding: 5px 10px;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+  }
+  #menu-bar {
+    transform-origin: top left;
+    /* transition: transform 0.1s ease; */
+    z-index: 10;
+  }
+
+  #menu-bar > * {
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 16px;
+  }
+
+  #menu-bar button {
+    padding: 5px 10px;
+  }
+
+  #menu-bar input {
+    width: 50px;
+    text-align: center;
+  }
+
+  #menu-bar button,
+  #menu-bar input,
+  #menu-bar > a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: solid 1px #5b5b5b;
+    border-radius: 2px;
+    color: black;
+    text-decoration: none;
+    cursor: default;
+  }
+  #menu-bar button:hover,
+  #menu-bar > a:hover {
+    background: #e5e5e5;
+  }
+
+  #viewer {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-y: auto;
+    background-color: #e0e0e0;
+    scroll-behavior: smooth;
+  }
+
+  iframe {
+    border: none;
+    flex: 1 1 auto;
+    height: 100%;
+    /* ensure full viewport height */
+    /* height: 100vh; */
+    margin: 0 5px;
+    transform-origin: top center;
+  }
+
+  /* Single-page mode */
+  #viewer.single-page iframe {
+    width: 100%;
+    margin: 0;
+  }
+
+  /* Two-page mode */
+  #viewer.two-page iframe {
+    width: 45%;
+  }
+</style>
+</head>
+<body>
+
+<div id="menu-bar">
+  <button id="prevPage">Previous</button>
+  <button id="nextPage">Next</button>
+  <input type="number" id="pageNumber" min="1" value="1"/>
+  <span id="totalPages"></span>
+  <button id="toggleMode">Two-Page Mode</button>
+  <a href="OEBPS/allpages.xhtml">All Pages</a>
+  <a href="OEBPS/fulltext.xhtml">Full Text</a>
+</div>
+
+<div id="viewer" class="single-page">
+  <iframe id="page1" name="page1" enable-annotation=""></iframe>
+</div>
+
+<script>
+  // <![CDATA[
+
+  // --- CONFIG: list of SVG files ---
+  const svgFiles = [
+'OEBPS/001.xhtml',
+'OEBPS/002.xhtml',
+'OEBPS/003.xhtml',
+'OEBPS/004.xhtml',
+'OEBPS/005.xhtml',
+'OEBPS/006.xhtml',
+'OEBPS/007.xhtml',
+'OEBPS/008.xhtml',
+'OEBPS/009.xhtml',
+'OEBPS/010.xhtml',
+'OEBPS/011.xhtml',
+'OEBPS/012.xhtml',
+'OEBPS/013.xhtml',
+'OEBPS/014.xhtml',
+'OEBPS/015.xhtml',
+'OEBPS/016.xhtml',
+'OEBPS/017.xhtml',
+'OEBPS/018.xhtml',
+'OEBPS/019.xhtml',
+'OEBPS/020.xhtml',
+'OEBPS/021.xhtml',
+'OEBPS/022.xhtml',
+'OEBPS/023.xhtml',
+'OEBPS/024.xhtml',
+'OEBPS/025.xhtml',
+'OEBPS/026.xhtml',
+'OEBPS/027.xhtml',
+'OEBPS/028.xhtml',
+'OEBPS/029.xhtml',
+'OEBPS/030.xhtml',
+'OEBPS/031.xhtml',
+'OEBPS/032.xhtml',
+'OEBPS/033.xhtml',
+'OEBPS/034.xhtml',
+'OEBPS/035.xhtml',
+'OEBPS/036.xhtml',
+'OEBPS/037.xhtml',
+'OEBPS/038.xhtml',
+'OEBPS/039.xhtml',
+'OEBPS/040.xhtml',
+'OEBPS/041.xhtml',
+'OEBPS/042.xhtml',
+'OEBPS/043.xhtml',
+'OEBPS/044.xhtml',
+'OEBPS/045.xhtml',
+'OEBPS/046.xhtml',
+'OEBPS/047.xhtml',
+'OEBPS/048.xhtml',
+'OEBPS/049.xhtml',
+'OEBPS/050.xhtml',
+'OEBPS/051.xhtml',
+'OEBPS/052.xhtml',
+'OEBPS/053.xhtml',
+'OEBPS/054.xhtml',
+'OEBPS/055.xhtml',
+'OEBPS/056.xhtml',
+'OEBPS/057.xhtml',
+'OEBPS/058.xhtml',
+'OEBPS/059.xhtml',
+'OEBPS/060.xhtml',
+'OEBPS/061.xhtml',
+'OEBPS/062.xhtml',
+'OEBPS/063.xhtml',
+'OEBPS/064.xhtml',
+'OEBPS/065.xhtml',
+'OEBPS/066.xhtml',
+'OEBPS/067.xhtml',
+'OEBPS/068.xhtml',
+'OEBPS/069.xhtml',
+'OEBPS/070.xhtml',
+'OEBPS/071.xhtml',
+'OEBPS/072.xhtml',
+'OEBPS/073.xhtml',
+'OEBPS/074.xhtml',
+'OEBPS/075.xhtml',
+'OEBPS/076.xhtml',
+'OEBPS/077.xhtml',
+'OEBPS/078.xhtml',
+'OEBPS/079.xhtml',
+'OEBPS/080.xhtml',
+'OEBPS/081.xhtml',
+'OEBPS/082.xhtml',
+'OEBPS/083.xhtml',
+'OEBPS/084.xhtml',
+'OEBPS/085.xhtml',
+'OEBPS/086.xhtml',
+'OEBPS/087.xhtml',
+'OEBPS/088.xhtml',
+'OEBPS/089.xhtml',
+'OEBPS/090.xhtml',
+'OEBPS/091.xhtml',
+'OEBPS/092.xhtml',
+'OEBPS/093.xhtml',
+'OEBPS/094.xhtml',
+'OEBPS/095.xhtml',
+'OEBPS/096.xhtml',
+'OEBPS/097.xhtml',
+'OEBPS/098.xhtml',
+'OEBPS/099.xhtml',
+'OEBPS/100.xhtml',
+'OEBPS/101.xhtml',
+'OEBPS/102.xhtml',
+'OEBPS/103.xhtml',
+'OEBPS/104.xhtml',
+'OEBPS/105.xhtml',
+'OEBPS/106.xhtml',
+'OEBPS/107.xhtml',
+'OEBPS/108.xhtml',
+'OEBPS/109.xhtml',
+'OEBPS/110.xhtml',
+'OEBPS/111.xhtml',
+'OEBPS/112.xhtml',
+'OEBPS/113.xhtml',
+'OEBPS/114.xhtml',
+'OEBPS/115.xhtml',
+'OEBPS/116.xhtml',
+'OEBPS/117.xhtml',
+'OEBPS/118.xhtml',
+'OEBPS/119.xhtml',
+'OEBPS/120.xhtml',
+'OEBPS/121.xhtml',
+'OEBPS/122.xhtml',
+'OEBPS/123.xhtml',
+'OEBPS/124.xhtml',
+'OEBPS/125.xhtml',
+'OEBPS/126.xhtml',
+'OEBPS/127.xhtml',
+'OEBPS/128.xhtml',
+'OEBPS/129.xhtml',
+'OEBPS/130.xhtml',
+'OEBPS/131.xhtml',
+'OEBPS/132.xhtml',
+'OEBPS/133.xhtml',
+'OEBPS/134.xhtml',
+];
+
+  let currentPage = 1; // 1-based
+  const totalPages = svgFiles.length;
+
+  const viewer = document.getElementById('viewer');
+  const pageNumberInput = document.getElementById('pageNumber');
+  const totalPagesSpan = document.getElementById('totalPages');
+  const toggleBtn = document.getElementById('toggleMode');
+
+  totalPagesSpan.textContent = `/ ${totalPages}`;
+
+  let twoPageMode = false; // single-page default
+
+  function createIframe(id) {
+    const iframe = document.createElement('iframe');
+    iframe.id = id;
+    iframe.setAttribute("name", id);
+    // enable hypothesis annotations in iframe
+    // https://h.readthedocs.io/projects/client/en/latest/publishers/embedding.html
+    iframe.setAttribute("enable-annotation", "");
+    viewer.appendChild(iframe);
+    return iframe;
+  }
+
+  function getIframe(index) {
+    return document.getElementById(index);
+  }
+
+  function loadPages() {
+    let page1 = document.getElementById('page1');
+    if (!page1) page1 = createIframe('page1');
+
+    let page2 = document.getElementById('page2');
+    if (twoPageMode && !page2) page2 = createIframe('page2');
+    if (!twoPageMode && page2) page2.remove();
+
+    // reduce white flash on page load in dark mode
+    // wait extra 100ms to avoid white flash from text layer
+    page1.style.visibility = "hidden";
+    page1.onload = () => { setTimeout(() => { page1.style.visibility = "visible"; }, 100); };
+    if (twoPageMode) {
+      page2.style.visibility = "hidden";
+      page2.onload = () => { setTimeout(() => { page2.style.visibility = "visible"; }, 100); };
+    }
+
+    if (twoPageMode) {
+      // Compute spread: left = even page
+      let leftIndex, rightIndex;
+
+      if (currentPage === 1) {
+        leftIndex = -1;       // empty
+        rightIndex = 0;       // page 1
+      } else {
+        leftIndex = currentPage % 2 === 0 ? currentPage - 1 : currentPage - 2;
+        rightIndex = leftIndex + 1;
+      }
+
+      page1.src = leftIndex >= 0 ? svgFiles[leftIndex] : '';
+      page2.src = rightIndex < totalPages ? svgFiles[rightIndex] : '';
+
+    } else {
+      page1.src = svgFiles[currentPage - 1] || '';
+    }
+
+    pageNumberInput.value = currentPage;
+    viewer.scrollTop = 0;
+  }
+
+  function goToPage(page, fromHash = false) {
+    // if (page < 1) page = 1; // limit
+    // if (page > totalPages) page = totalPages; // limit
+    if (page < 1) page = totalPages; // overflow
+    if (page > totalPages) page = 1; // overflow
+    currentPage = page;
+    loadPages();
+    // update hash if user navigated via buttons/input/etc.
+    if (!fromHash) {
+      history.replaceState(null, '', `#${currentPage}`);
+    }
+  }
+
+  function nextPage() {
+    if (twoPageMode) goToPage(currentPage + 2);
+    else goToPage(currentPage + 1);
+  }
+
+  function prevPage() {
+    if (twoPageMode) goToPage(currentPage - 2);
+    else goToPage(currentPage - 1);
+  }
+
+  function updateMode() {
+    viewer.className = twoPageMode ? 'two-page' : 'single-page';
+    toggleBtn.textContent = twoPageMode ? 'Single-Page Mode' : 'Two-Page Mode';
+    loadPages();
+  }
+
+  document.getElementById('prevPage').addEventListener('click', prevPage);
+  document.getElementById('nextPage').addEventListener('click', nextPage);
+  pageNumberInput.addEventListener('change', () => goToPage(parseInt(pageNumberInput.value)));
+  toggleBtn.addEventListener('click', () => {
+    twoPageMode = !twoPageMode;
+    updateMode();
+  });
+
+  window.addEventListener('resize', () => {
+    // optional: could auto-switch based on width
+  });
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowLeft') prevPage();
+    if (e.key === 'ArrowRight') nextPage();
+    if (e.key === 'ArrowUp') viewer.scrollBy({ top: -50, behavior: 'smooth' });
+    if (e.key === 'ArrowDown') viewer.scrollBy({ top: 50, behavior: 'smooth' });
+  });
+
+  // Sync scrolling in two-page mode
+  viewer.addEventListener('scroll', () => {
+    if (twoPageMode) {
+      const page1 = document.getElementById('page1');
+      const page2 = document.getElementById('page2');
+      if (page1?.contentWindow) page1.contentWindow.scrollTo(0, viewer.scrollTop);
+      if (page2?.contentWindow) page2.contentWindow.scrollTo(0, viewer.scrollTop);
+    }
+  });
+
+  // prevent toolbar zoom
+  let lastDevicePixelRatio = window.devicePixelRatio;
+  function updateToolbarScale() {
+    const ratio = window.devicePixelRatio;
+    const toolbar = document.getElementById('menu-bar');
+    // Apply inverse scale so the toolbar stays 1:1 visually
+    toolbar.style.transform = `scale(${1 / ratio})`;
+    // scale toolbar height
+    // 40px = height + padding = 30px + 2*5px
+    toolbar.style.marginBottom = `${((1 / ratio) - 1) * 40}px`;
+    // Compensate for layout shrink (otherwise the scaled bar no longer spans full width)
+    toolbar.style.width = `${100 * ratio}%`;
+    lastDevicePixelRatio = ratio;
+  }
+  updateToolbarScale();
+  // Monitor for zoom changes (devicePixelRatio changes)
+  window.matchMedia(`(resolution: ${window.devicePixelRatio}dppx)`)
+    .addEventListener('change', updateToolbarScale);
+  // Also poll periodically as fallback (some browsers don't fire the event reliably)
+  setInterval(() => {
+    if (window.devicePixelRatio !== lastDevicePixelRatio) {
+      updateToolbarScale();
+    }
+  }, 1000);
+
+  function getPageFromHash() {
+    const match = location.hash.match(/^#(\d+)/);
+    return match ? parseInt(match[1], 10) : null;
+  }
+
+  // Initial load: get page number from URL fragment ID
+  const initialPage = getPageFromHash();
+  if (initialPage && initialPage >= 1 && initialPage <= totalPages) {
+    currentPage = initialPage;
+  }
+
+  // Initial load
+  loadPages();
+  updateMode();
+
+  // Make sure the hash is correct (e.g. if user loaded without one)
+  history.replaceState(null, '', `#${currentPage}`);
+
+  // --- URL fragment synchronization ---
+  // When URL hash changes, navigate to that page
+  window.addEventListener('hashchange', () => {
+    const pageFromHash = getPageFromHash();
+    if (pageFromHash && pageFromHash !== currentPage) {
+      goToPage(pageFromHash, true);
+    }
+  });
+
+  // handle clicks from nav.xhtml
+  window.addEventListener("message", (event) => {
+    if (event.data.type === "iframe-link-click") {
+      const match = /\/OEBPS\/(\d+).xhtml$/.exec(event.data.href);
+      if (match) {
+        const pageNum = Number(match[1]);
+        // load page again to update menu
+        goToPage(pageNum);
+      }
+      else {
+        console.error("error: iframe navigated to unrecognized URL:", event.data.href);
+      }
+    }
+  });
+
+  // ]]>
+
+</script>
+
+</body>
+</html>

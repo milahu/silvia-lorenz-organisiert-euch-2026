@@ -1,0 +1,439 @@
+<?xml version='1.0' encoding='utf-8'?>
+<package version='3.0'
+ xmlns='http://www.idpf.org/2007/opf'
+ unique-identifier='bookid'
+>
+  <metadata xmlns:dc='http://purl.org/dc/elements/1.1/'>
+    <dc:title id="book-title">Organisiert Euch!</dc:title>
+    <meta refines="#book-title" property="title-type">main</meta>
+    <dc:title id="book-subtitle">Denkschrift für eine selbstbestimmte Ordnung</dc:title>
+    <meta refines="#book-subtitle" property="title-type">subtitle</meta>
+    <dc:description>
+Das Buch setzt sich mit der Frage auseinander,
+wie Gesellschaften ohne zentrale Verwaltung - sprich, den Staat - organisiert werden können.
+
+Dabei geht es primär um Gegenentwürfe zur zunehmenden Machtkonzentration von Staat und Konzernoligarchien.
+Um Konzepte, die dem supranationalen Korporatismus
+mit dezentralen und eigenverantwortlichen Ansätzen begegnen wollen.
+Um Voluntarismus.
+</dc:description>
+    <dc:creator id="creator0">Silvia Lorenz</dc:creator>
+    <meta refines="#creator0" property="role" scheme="marc:relators">aut</meta>
+    <dc:language>de</dc:language>
+    <dc:identifier id="bookid">urn:isbn:9783384829603</dc:identifier>
+    <dc:publisher>regenauer.press</dc:publisher>
+    <meta property="dcterms:modified">2026-08-19T20:39:18Z</meta>
+    <dc:date>2026</dc:date>
+    <meta property="dcterms:edition">1</meta>
+    <meta property="dcterms:extent">132 pages</meta>
+    <meta name="cover" content="img133"/>
+    <dc:creator>hocr-to-epub-fxl</dc:creator>
+  </metadata>
+  <manifest>
+    <item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>
+    <item id='page1' href='001.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img1' href='images/001.avif' media-type='image/avif'/>
+    <item id='page2' href='002.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img2' href='images/002.avif' media-type='image/avif'/>
+    <item id='page3' href='003.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img3' href='images/003.avif' media-type='image/avif'/>
+    <item id='page4' href='004.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img4' href='images/004.avif' media-type='image/avif'/>
+    <item id='page5' href='005.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img5' href='images/005.avif' media-type='image/avif'/>
+    <item id='page6' href='006.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img6' href='images/006.avif' media-type='image/avif'/>
+    <item id='page7' href='007.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img7' href='images/007.avif' media-type='image/avif'/>
+    <item id='page8' href='008.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img8' href='images/008.avif' media-type='image/avif'/>
+    <item id='page9' href='009.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img9' href='images/009.avif' media-type='image/avif'/>
+    <item id='page10' href='010.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img10' href='images/010.avif' media-type='image/avif'/>
+    <item id='page11' href='011.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img11' href='images/011.avif' media-type='image/avif'/>
+    <item id='page12' href='012.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img12' href='images/012.avif' media-type='image/avif'/>
+    <item id='page13' href='013.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img13' href='images/013.avif' media-type='image/avif'/>
+    <item id='page14' href='014.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img14' href='images/014.avif' media-type='image/avif'/>
+    <item id='page15' href='015.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img15' href='images/015.avif' media-type='image/avif'/>
+    <item id='page16' href='016.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img16' href='images/016.avif' media-type='image/avif'/>
+    <item id='page17' href='017.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img17' href='images/017.avif' media-type='image/avif'/>
+    <item id='page18' href='018.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img18' href='images/018.avif' media-type='image/avif'/>
+    <item id='page19' href='019.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img19' href='images/019.avif' media-type='image/avif'/>
+    <item id='page20' href='020.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img20' href='images/020.avif' media-type='image/avif'/>
+    <item id='page21' href='021.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img21' href='images/021.avif' media-type='image/avif'/>
+    <item id='page22' href='022.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img22' href='images/022.avif' media-type='image/avif'/>
+    <item id='page23' href='023.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img23' href='images/023.avif' media-type='image/avif'/>
+    <item id='page24' href='024.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img24' href='images/024.avif' media-type='image/avif'/>
+    <item id='page25' href='025.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img25' href='images/025.avif' media-type='image/avif'/>
+    <item id='page26' href='026.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img26' href='images/026.avif' media-type='image/avif'/>
+    <item id='page27' href='027.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img27' href='images/027.avif' media-type='image/avif'/>
+    <item id='page28' href='028.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img28' href='images/028.avif' media-type='image/avif'/>
+    <item id='page29' href='029.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img29' href='images/029.avif' media-type='image/avif'/>
+    <item id='page30' href='030.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img30' href='images/030.avif' media-type='image/avif'/>
+    <item id='page31' href='031.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img31' href='images/031.avif' media-type='image/avif'/>
+    <item id='page32' href='032.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img32' href='images/032.avif' media-type='image/avif'/>
+    <item id='page33' href='033.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img33' href='images/033.avif' media-type='image/avif'/>
+    <item id='page34' href='034.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img34' href='images/034.avif' media-type='image/avif'/>
+    <item id='page35' href='035.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img35' href='images/035.avif' media-type='image/avif'/>
+    <item id='page36' href='036.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img36' href='images/036.avif' media-type='image/avif'/>
+    <item id='page37' href='037.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img37' href='images/037.avif' media-type='image/avif'/>
+    <item id='page38' href='038.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img38' href='images/038.avif' media-type='image/avif'/>
+    <item id='page39' href='039.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img39' href='images/039.avif' media-type='image/avif'/>
+    <item id='page40' href='040.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img40' href='images/040.avif' media-type='image/avif'/>
+    <item id='page41' href='041.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img41' href='images/041.avif' media-type='image/avif'/>
+    <item id='page42' href='042.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img42' href='images/042.avif' media-type='image/avif'/>
+    <item id='page43' href='043.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img43' href='images/043.avif' media-type='image/avif'/>
+    <item id='page44' href='044.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img44' href='images/044.avif' media-type='image/avif'/>
+    <item id='page45' href='045.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img45' href='images/045.avif' media-type='image/avif'/>
+    <item id='page46' href='046.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img46' href='images/046.avif' media-type='image/avif'/>
+    <item id='page47' href='047.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img47' href='images/047.avif' media-type='image/avif'/>
+    <item id='page48' href='048.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img48' href='images/048.avif' media-type='image/avif'/>
+    <item id='page49' href='049.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img49' href='images/049.avif' media-type='image/avif'/>
+    <item id='page50' href='050.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img50' href='images/050.avif' media-type='image/avif'/>
+    <item id='page51' href='051.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img51' href='images/051.avif' media-type='image/avif'/>
+    <item id='page52' href='052.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img52' href='images/052.avif' media-type='image/avif'/>
+    <item id='page53' href='053.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img53' href='images/053.avif' media-type='image/avif'/>
+    <item id='page54' href='054.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img54' href='images/054.avif' media-type='image/avif'/>
+    <item id='page55' href='055.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img55' href='images/055.avif' media-type='image/avif'/>
+    <item id='page56' href='056.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img56' href='images/056.avif' media-type='image/avif'/>
+    <item id='page57' href='057.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img57' href='images/057.avif' media-type='image/avif'/>
+    <item id='page58' href='058.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img58' href='images/058.avif' media-type='image/avif'/>
+    <item id='page59' href='059.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img59' href='images/059.avif' media-type='image/avif'/>
+    <item id='page60' href='060.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img60' href='images/060.avif' media-type='image/avif'/>
+    <item id='page61' href='061.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img61' href='images/061.avif' media-type='image/avif'/>
+    <item id='page62' href='062.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img62' href='images/062.avif' media-type='image/avif'/>
+    <item id='page63' href='063.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img63' href='images/063.avif' media-type='image/avif'/>
+    <item id='page64' href='064.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img64' href='images/064.avif' media-type='image/avif'/>
+    <item id='page65' href='065.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img65' href='images/065.avif' media-type='image/avif'/>
+    <item id='page66' href='066.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img66' href='images/066.avif' media-type='image/avif'/>
+    <item id='page67' href='067.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img67' href='images/067.avif' media-type='image/avif'/>
+    <item id='page68' href='068.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img68' href='images/068.avif' media-type='image/avif'/>
+    <item id='page69' href='069.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img69' href='images/069.avif' media-type='image/avif'/>
+    <item id='page70' href='070.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img70' href='images/070.avif' media-type='image/avif'/>
+    <item id='page71' href='071.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img71' href='images/071.avif' media-type='image/avif'/>
+    <item id='page72' href='072.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img72' href='images/072.avif' media-type='image/avif'/>
+    <item id='page73' href='073.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img73' href='images/073.avif' media-type='image/avif'/>
+    <item id='page74' href='074.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img74' href='images/074.avif' media-type='image/avif'/>
+    <item id='page75' href='075.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img75' href='images/075.avif' media-type='image/avif'/>
+    <item id='page76' href='076.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img76' href='images/076.avif' media-type='image/avif'/>
+    <item id='page77' href='077.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img77' href='images/077.avif' media-type='image/avif'/>
+    <item id='page78' href='078.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img78' href='images/078.avif' media-type='image/avif'/>
+    <item id='page79' href='079.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img79' href='images/079.avif' media-type='image/avif'/>
+    <item id='page80' href='080.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img80' href='images/080.avif' media-type='image/avif'/>
+    <item id='page81' href='081.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img81' href='images/081.avif' media-type='image/avif'/>
+    <item id='page82' href='082.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img82' href='images/082.avif' media-type='image/avif'/>
+    <item id='page83' href='083.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img83' href='images/083.avif' media-type='image/avif'/>
+    <item id='page84' href='084.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img84' href='images/084.avif' media-type='image/avif'/>
+    <item id='page85' href='085.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img85' href='images/085.avif' media-type='image/avif'/>
+    <item id='page86' href='086.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img86' href='images/086.avif' media-type='image/avif'/>
+    <item id='page87' href='087.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img87' href='images/087.avif' media-type='image/avif'/>
+    <item id='page88' href='088.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img88' href='images/088.avif' media-type='image/avif'/>
+    <item id='page89' href='089.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img89' href='images/089.avif' media-type='image/avif'/>
+    <item id='page90' href='090.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img90' href='images/090.avif' media-type='image/avif'/>
+    <item id='page91' href='091.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img91' href='images/091.avif' media-type='image/avif'/>
+    <item id='page92' href='092.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img92' href='images/092.avif' media-type='image/avif'/>
+    <item id='page93' href='093.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img93' href='images/093.avif' media-type='image/avif'/>
+    <item id='page94' href='094.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img94' href='images/094.avif' media-type='image/avif'/>
+    <item id='page95' href='095.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img95' href='images/095.avif' media-type='image/avif'/>
+    <item id='page96' href='096.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img96' href='images/096.avif' media-type='image/avif'/>
+    <item id='page97' href='097.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img97' href='images/097.avif' media-type='image/avif'/>
+    <item id='page98' href='098.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img98' href='images/098.avif' media-type='image/avif'/>
+    <item id='page99' href='099.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img99' href='images/099.avif' media-type='image/avif'/>
+    <item id='page100' href='100.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img100' href='images/100.avif' media-type='image/avif'/>
+    <item id='page101' href='101.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img101' href='images/101.avif' media-type='image/avif'/>
+    <item id='page102' href='102.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img102' href='images/102.avif' media-type='image/avif'/>
+    <item id='page103' href='103.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img103' href='images/103.avif' media-type='image/avif'/>
+    <item id='page104' href='104.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img104' href='images/104.avif' media-type='image/avif'/>
+    <item id='page105' href='105.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img105' href='images/105.avif' media-type='image/avif'/>
+    <item id='page106' href='106.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img106' href='images/106.avif' media-type='image/avif'/>
+    <item id='page107' href='107.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img107' href='images/107.avif' media-type='image/avif'/>
+    <item id='page108' href='108.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img108' href='images/108.avif' media-type='image/avif'/>
+    <item id='page109' href='109.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img109' href='images/109.avif' media-type='image/avif'/>
+    <item id='page110' href='110.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img110' href='images/110.avif' media-type='image/avif'/>
+    <item id='page111' href='111.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img111' href='images/111.avif' media-type='image/avif'/>
+    <item id='page112' href='112.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img112' href='images/112.avif' media-type='image/avif'/>
+    <item id='page113' href='113.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img113' href='images/113.avif' media-type='image/avif'/>
+    <item id='page114' href='114.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img114' href='images/114.avif' media-type='image/avif'/>
+    <item id='page115' href='115.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img115' href='images/115.avif' media-type='image/avif'/>
+    <item id='page116' href='116.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img116' href='images/116.avif' media-type='image/avif'/>
+    <item id='page117' href='117.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img117' href='images/117.avif' media-type='image/avif'/>
+    <item id='page118' href='118.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img118' href='images/118.avif' media-type='image/avif'/>
+    <item id='page119' href='119.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img119' href='images/119.avif' media-type='image/avif'/>
+    <item id='page120' href='120.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img120' href='images/120.avif' media-type='image/avif'/>
+    <item id='page121' href='121.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img121' href='images/121.avif' media-type='image/avif'/>
+    <item id='page122' href='122.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img122' href='images/122.avif' media-type='image/avif'/>
+    <item id='page123' href='123.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img123' href='images/123.avif' media-type='image/avif'/>
+    <item id='page124' href='124.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img124' href='images/124.avif' media-type='image/avif'/>
+    <item id='page125' href='125.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img125' href='images/125.avif' media-type='image/avif'/>
+    <item id='page126' href='126.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img126' href='images/126.avif' media-type='image/avif'/>
+    <item id='page127' href='127.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img127' href='images/127.avif' media-type='image/avif'/>
+    <item id='page128' href='128.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img128' href='images/128.avif' media-type='image/avif'/>
+    <item id='page129' href='129.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img129' href='images/129.avif' media-type='image/avif'/>
+    <item id='page130' href='130.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img130' href='images/130.avif' media-type='image/avif'/>
+    <item id='page131' href='131.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img131' href='images/131.avif' media-type='image/avif'/>
+    <item id='page132' href='132.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img132' href='images/132.avif' media-type='image/avif'/>
+    <item id='page133' href='133.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img133' href='images/133.avif' media-type='image/avif'/>
+    <item id='page134' href='134.xhtml' media-type='application/xhtml+xml' properties='scripted'/>
+    <item id='img134' href='images/134.avif' media-type='image/avif'/>
+  </manifest>
+  <spine>
+    <itemref idref='page1'/>
+    <itemref idref='page2'/>
+    <itemref idref='page3'/>
+    <itemref idref='page4'/>
+    <itemref idref='page5'/>
+    <itemref idref='page6'/>
+    <itemref idref='page7'/>
+    <itemref idref='page8'/>
+    <itemref idref='page9'/>
+    <itemref idref='page10'/>
+    <itemref idref='page11'/>
+    <itemref idref='page12'/>
+    <itemref idref='page13'/>
+    <itemref idref='page14'/>
+    <itemref idref='page15'/>
+    <itemref idref='page16'/>
+    <itemref idref='page17'/>
+    <itemref idref='page18'/>
+    <itemref idref='page19'/>
+    <itemref idref='page20'/>
+    <itemref idref='page21'/>
+    <itemref idref='page22'/>
+    <itemref idref='page23'/>
+    <itemref idref='page24'/>
+    <itemref idref='page25'/>
+    <itemref idref='page26'/>
+    <itemref idref='page27'/>
+    <itemref idref='page28'/>
+    <itemref idref='page29'/>
+    <itemref idref='page30'/>
+    <itemref idref='page31'/>
+    <itemref idref='page32'/>
+    <itemref idref='page33'/>
+    <itemref idref='page34'/>
+    <itemref idref='page35'/>
+    <itemref idref='page36'/>
+    <itemref idref='page37'/>
+    <itemref idref='page38'/>
+    <itemref idref='page39'/>
+    <itemref idref='page40'/>
+    <itemref idref='page41'/>
+    <itemref idref='page42'/>
+    <itemref idref='page43'/>
+    <itemref idref='page44'/>
+    <itemref idref='page45'/>
+    <itemref idref='page46'/>
+    <itemref idref='page47'/>
+    <itemref idref='page48'/>
+    <itemref idref='page49'/>
+    <itemref idref='page50'/>
+    <itemref idref='page51'/>
+    <itemref idref='page52'/>
+    <itemref idref='page53'/>
+    <itemref idref='page54'/>
+    <itemref idref='page55'/>
+    <itemref idref='page56'/>
+    <itemref idref='page57'/>
+    <itemref idref='page58'/>
+    <itemref idref='page59'/>
+    <itemref idref='page60'/>
+    <itemref idref='page61'/>
+    <itemref idref='page62'/>
+    <itemref idref='page63'/>
+    <itemref idref='page64'/>
+    <itemref idref='page65'/>
+    <itemref idref='page66'/>
+    <itemref idref='page67'/>
+    <itemref idref='page68'/>
+    <itemref idref='page69'/>
+    <itemref idref='page70'/>
+    <itemref idref='page71'/>
+    <itemref idref='page72'/>
+    <itemref idref='page73'/>
+    <itemref idref='page74'/>
+    <itemref idref='page75'/>
+    <itemref idref='page76'/>
+    <itemref idref='page77'/>
+    <itemref idref='page78'/>
+    <itemref idref='page79'/>
+    <itemref idref='page80'/>
+    <itemref idref='page81'/>
+    <itemref idref='page82'/>
+    <itemref idref='page83'/>
+    <itemref idref='page84'/>
+    <itemref idref='page85'/>
+    <itemref idref='page86'/>
+    <itemref idref='page87'/>
+    <itemref idref='page88'/>
+    <itemref idref='page89'/>
+    <itemref idref='page90'/>
+    <itemref idref='page91'/>
+    <itemref idref='page92'/>
+    <itemref idref='page93'/>
+    <itemref idref='page94'/>
+    <itemref idref='page95'/>
+    <itemref idref='page96'/>
+    <itemref idref='page97'/>
+    <itemref idref='page98'/>
+    <itemref idref='page99'/>
+    <itemref idref='page100'/>
+    <itemref idref='page101'/>
+    <itemref idref='page102'/>
+    <itemref idref='page103'/>
+    <itemref idref='page104'/>
+    <itemref idref='page105'/>
+    <itemref idref='page106'/>
+    <itemref idref='page107'/>
+    <itemref idref='page108'/>
+    <itemref idref='page109'/>
+    <itemref idref='page110'/>
+    <itemref idref='page111'/>
+    <itemref idref='page112'/>
+    <itemref idref='page113'/>
+    <itemref idref='page114'/>
+    <itemref idref='page115'/>
+    <itemref idref='page116'/>
+    <itemref idref='page117'/>
+    <itemref idref='page118'/>
+    <itemref idref='page119'/>
+    <itemref idref='page120'/>
+    <itemref idref='page121'/>
+    <itemref idref='page122'/>
+    <itemref idref='page123'/>
+    <itemref idref='page124'/>
+    <itemref idref='page125'/>
+    <itemref idref='page126'/>
+    <itemref idref='page127'/>
+    <itemref idref='page128'/>
+    <itemref idref='page129'/>
+    <itemref idref='page130'/>
+    <itemref idref='page131'/>
+    <itemref idref='page132'/>
+    <itemref idref='page133'/>
+    <itemref idref='page134'/>
+  </spine>
+</package>
