@@ -1,12 +1,44 @@
-# TODO_BOOK_AUTHOR_NAME_YEAR
+# Silvia Lorenz - Organisiert Euch! Denkschrift für eine selbstbestimmte Ordnung (2026)
 
-![TODO_BOOK_AUTHOR_NAME_YEAR](cover.avif)
+![Silvia Lorenz - Organisiert Euch! Denkschrift für eine selbstbestimmte Ordnung (2026)](cover.avif)
 
-TODO_BOOK_STORE_URL
+https://www.amazon.de/dp/3384829603
+
+https://shop.tredition.com/booktitle/ORGANISIERT_EUCH/W-146-028-082
 
 <blockquote>
 
-TODO_BOOK_STORE_DESCRIPTION
+Organisiert Euch!
+Denkschrift für eine selbstbestimmte Ordnung
+
+Silvia Lorenz (Autor),
+Tina Ovalle (Illustrator),
+Tom-Oliver Regenauer (Mitwirkende),
+Robert Schumann (Mitwirkende),
+Jens Fischer Rodrian (Mitwirkende)
+
+5.0 out of 5 stars, (20) ratings
+
+Das Buch setzt sich mit der Frage auseinander,
+wie Gesellschaften ohne zentrale Verwaltung - sprich, den Staat - organisiert werden können.
+
+Dabei geht es primär um Gegenentwürfe zur zunehmenden Machtkonzentration von Staat und Konzernoligarchien.
+Um Konzepte, die dem supranationalen Korporatismus
+mit dezentralen und eigenverantwortlichen Ansätzen begegnen wollen.
+Um Voluntarismus.
+
+- Herausgeber: regenauer.press
+- Erscheinungstermin: 23. März 2026
+- Sprache: Deutsch
+- Seitenzahl der Print-Ausgabe: 128 Seiten
+- ISBN-10: 3384829603
+- ISBN-13: 9783384829603
+- Abmessungen: 12.7 x 0.79 x 20.32 cm
+- Amazon Bestseller-Rang:
+  - Nr. 22.616 in Bücher
+  - Nr. 9 in Philosophie der Logik (Bücher)
+  - Nr. 10 in Public Affairs & Administration
+  - Nr. 19 in Internationales Management (Bücher)
 
 </blockquote>
 
@@ -20,11 +52,11 @@ TODO_BOOK_TORRENT_MAGNET_LINK
 
 ## mirrors
 
-- https://github.com/TODO_REPO_OWNER_USERNAME/TODO_REPO_NAME
-- http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/TODO_REPO_OWNER_USERNAME/TODO_REPO_NAME
-- http://git.dkforestseeaaq2dqz2uflmlsybvnq2irzn4ygyvu53oazyorednviid.onion/TODO_REPO_OWNER_USERNAME/TODO_REPO_NAME
-- http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/TODO_REPO_OWNER_USERNAME/TODO_REPO_NAME
-- http://gdatura24gtdy23lxd7ht3xzx6mi7mdlkabpvuefhrjn4t5jduviw5ad.onion/TODO_REPO_OWNER_USERNAME/TODO_REPO_NAME
+- https://github.com/milahu/silvia-lorenz-organisiert-euch-2026
+- http://gg6zxtreajiijztyy5g6bt5o6l3qu32nrg7eulyemlhxwwl6enk6ghad.onion/milahu/silvia-lorenz-organisiert-euch-2026
+- http://git.dkforestseeaaq2dqz2uflmlsybvnq2irzn4ygyvu53oazyorednviid.onion/milahu/silvia-lorenz-organisiert-euch-2026
+- http://it7otdanqu7ktntxzm427cba6i53w6wlanlh23v5i3siqmos47pzhvyd.onion/milahu/silvia-lorenz-organisiert-euch-2026
+- http://gdatura24gtdy23lxd7ht3xzx6mi7mdlkabpvuefhrjn4t5jduviw5ad.onion/milahu/silvia-lorenz-organisiert-euch-2026
 
 
 
