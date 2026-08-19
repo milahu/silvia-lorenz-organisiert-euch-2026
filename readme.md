@@ -44,10 +44,10 @@ Um Voluntarismus.
 
 ## scans
 
-### TODO_BOOK_TORRENT_NAME
+### silvia.lorenz.organisiert.euch.2026.600dpi.german.book.scan
 
 ```
-TODO_BOOK_TORRENT_MAGNET_LINK
+magnet:?xt=urn:btih:ee52d6bc05c9568dca9d926cec9667a95a5e9450&dn=silvia.lorenz.organisiert.euch.2026.600dpi.german.book.scan&xl=184062157&tr=udp%3A%2F%2F185.216.179.62%3A25%2Fannounce&tr=udp%3A%2F%2F93.158.213.92%3A1337%2Fannounce&tr=udp%3A%2F%2F107.189.2.131%3A1337%2Fannounce&piece_size=4194304
 ```
 
 ## mirrors
